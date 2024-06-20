@@ -18,7 +18,6 @@ const create = async (req, res, next) => {
     });
   } catch (error) {
     next(error);
-    console.log(error);
   }
 };
 
@@ -30,7 +29,6 @@ const index = async (req, res, next) => {
       data: result,
     });
   } catch (error) {
-    console.log(error);
     next(error);
   }
 };
@@ -68,7 +66,6 @@ const destroy = async (req, res, next) => {
     });
   } catch (error) {
     next(error);
-    console.log(error);
   }
 };
 
